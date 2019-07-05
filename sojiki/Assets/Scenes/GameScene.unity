@@ -580,7 +580,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0.06162845, y: -0.70441604, z: 0.06162845, w: 0.70441604}
-  m_LocalPosition: {x: 52.465233, y: 34.76718, z: 0.42518044}
+  m_LocalPosition: {x: 53.2, y: 34.9, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 872707717}
@@ -609,8 +609,8 @@ PositionConstraint:
   m_GameObject: {fileID: 534669902}
   m_Enabled: 1
   m_Weight: 1
-  m_TranslationAtRest: {x: 52.465233, y: 34.76718, z: 0.42518044}
-  m_TranslationOffset: {x: 0.8452339, y: -0.6328201, z: 0.8899994}
+  m_TranslationAtRest: {x: 53.2, y: 34.9, z: -0.1}
+  m_TranslationOffset: {x: 1.5800018, y: -0.5, z: 0.36481896}
   m_AffectTranslationX: 1
   m_AffectTranslationY: 1
   m_AffectTranslationZ: 1
@@ -1268,7 +1268,6 @@ GameObject:
   - component: {fileID: 1323351098}
   - component: {fileID: 1323351097}
   - component: {fileID: 1323351096}
-  - component: {fileID: 1323351095}
   - component: {fileID: 1323351099}
   - component: {fileID: 1323351100}
   m_Layer: 0
@@ -1278,20 +1277,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!136 &1323351095
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1323351094}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1323351096
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1481,6 +1466,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHand: {fileID: 1541912741}
   gameCamera: {fileID: 534669902}
+  playerHandAndSojiki: {fileID: 1541912741}
+  playerHandAndSojikiQuaternion: {x: 0, y: 0, z: 0, w: 0}
 --- !u!4 &1541912743
 Transform:
   m_ObjectHideFlags: 0

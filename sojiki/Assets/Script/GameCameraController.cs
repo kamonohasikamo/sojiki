@@ -21,8 +21,6 @@ public class GameCameraController : MonoBehaviour {
 			
 			// targetの位置のY軸を中心に、回転（公転）する
 			transform.RotateAround(targetPos, Vector3.up, mouseInputX * Time.deltaTime * 200f);
-			// カメラの垂直移動（※角度制限なし、必要が無ければコメントアウト）
-			//transform.RotateAround(targetPos, transform.right, mouseInputY * Time.deltaTime * 200f);
 		}
 	}
 }
