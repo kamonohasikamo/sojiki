@@ -54,6 +54,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\GameCameraController.cs" />
+     <Compile Include="Assets\Script\GameStart\DescriptionButtonController.cs" />
+     <Compile Include="Assets\Script\GameStart\GameStartButtonController.cs" />
+     <Compile Include="Assets\Script\GameStart\ShowTextController.cs" />
+     <Compile Include="Assets\Script\GameStart\TitleBackScript.cs" />
      <Compile Include="Assets\Script\PlayerController.cs" />
      <Compile Include="Assets\Script\PlayerObjectCotroller.cs" />
      <Compile Include="Assets\Script\ScoreController.cs" />
@@ -62,6 +66,7 @@
      <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\LeapMotion\Resources\LeapCG.cginc" />
      <None Include="Assets\LeapMotion\README_BEFORE_UPDATING.txt" />
+     <None Include="Assets\Resources\GameDescription.txt" />
      <None Include="Assets\LeapMotion\readme.txt" />
      <None Include="Assets\LeapMotion\Shaders\RimShading.shader" />
      <None Include="Assets\LeapMotion\Dependencies.txt" />
