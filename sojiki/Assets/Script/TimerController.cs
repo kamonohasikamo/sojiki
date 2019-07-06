@@ -13,11 +13,15 @@ public class TimerController : MonoBehaviour {
 	}
 
 	void Update() {
-		totalTime -= Time.deltaTime;
-		seconds = (int)totalTime;
-		if (seconds <= 0) {
-			seconds = 0;
+		if (!SojikiSentanController.getIsGameOver()) {
+			totalTime -= Time.deltaTime;
+			seconds = (int)totalTime;
+			if (seconds <= 0) {
+				seconds = 0;
+			}
+			timerText.text = "残り時間：" + seconds.ToString() + "秒";
+		} else {
+			timerText.text = "GameOver!!!";
 		}
-		timerText.text = "残り時間：" + seconds.ToString() + "秒";
 	}
 }

@@ -27,7 +27,5 @@ public class PlayerController : MonoBehaviour {
 		angle = angle > 180f ? angle - 360f : angle;
 		playerHand.transform.rotation
 			= Quaternion.Euler(0f, angle, 0f);
-		Debug.Log("playerQuaternion = " + playerHand.transform.rotation.eulerAngles);
-		Debug.Log("gameCamera = " + gameCamera.transform.rotation.eulerAngles);
 	}
 }
