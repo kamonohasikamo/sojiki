@@ -55,7 +55,7 @@
   <ItemGroup>
      <Compile Include="Assets\Script\GameCameraController.cs" />
      <Compile Include="Assets\Script\GameStart\DescriptionButtonController.cs" />
-     <Compile Include="Assets\Script\GameStart\GameStartButtonController.cs" />
+     <Compile Include="Assets\Script\GameStart\GameStartButtonToLoadController.cs" />
      <Compile Include="Assets\Script\GameStart\ShowTextController.cs" />
      <Compile Include="Assets\Script\GameStart\TitleBackScript.cs" />
      <Compile Include="Assets\Script\PlayerController.cs" />
