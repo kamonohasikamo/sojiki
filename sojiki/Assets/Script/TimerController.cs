@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 public class TimerController : MonoBehaviour {
 
 	public Text timerText;
@@ -21,7 +23,7 @@ public class TimerController : MonoBehaviour {
 			}
 			timerText.text = "残り時間：" + seconds.ToString() + "秒";
 		} else {
-			timerText.text = "GameOver!!!";
+			SceneManager.LoadScene("Result");
 		}
 	}
 }
