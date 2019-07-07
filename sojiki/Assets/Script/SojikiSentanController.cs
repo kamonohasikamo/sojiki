@@ -7,24 +7,32 @@ using UnityEngine.SceneManagement;
 public class SojikiSentanController : MonoBehaviour {
 	public GameObject sojikiSentan;
 	public static bool isGameOver;
+	public AudioClip itemGetSound;
+	AudioSource audioSource;
 	void Start() {
 		isGameOver = false;
+		// SE Audio Source
+		audioSource = GetComponent<AudioSource>();
 	}
 	void OnCollisionEnter(Collision other) {
 		if (Input.GetMouseButton(0)) {
 			if (other.gameObject.tag == "Tanni") {
+				audioSource.PlayOneShot(itemGetSound);
 				Destroy(other.gameObject);
 				ScoreController.setScore(100);
 			}
 			if (other.gameObject.tag == "Tanni_yu") {
+				audioSource.PlayOneShot(itemGetSound);
 				Destroy(other.gameObject);
 				ScoreController.setScore(80);
 			}
 			if (other.gameObject.tag == "Tanni_ryo") {
+				audioSource.PlayOneShot(itemGetSound);
 				Destroy(other.gameObject);
 				ScoreController.setScore(70);
 			}
 			if (other.gameObject.tag == "Tanni_ka") {
+				audioSource.PlayOneShot(itemGetSound);
 				Destroy(other.gameObject);
 				ScoreController.setScore(60);
 			}

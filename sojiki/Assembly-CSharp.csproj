@@ -82,6 +82,7 @@
      <None Include="Assets\LeapMotion\Resources\PassthroughBackground.shader" />
      <None Include="Assets\LeapMotion\Version.txt" />
      <None Include="Assets\LeapMotion\Resources\ImageHandHighlight.shader" />
+     <None Include="Assets\StreamingAssets\GameDescription.txt" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/cs16048/Documents/Unity/sojiki/sojiki/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>

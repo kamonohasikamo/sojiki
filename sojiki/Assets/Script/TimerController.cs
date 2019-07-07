@@ -20,10 +20,9 @@ public class TimerController : MonoBehaviour {
 			seconds = (int)totalTime;
 			if (seconds <= 0) {
 				seconds = 0;
+				SceneManager.LoadScene("Result");
 			}
 			timerText.text = "残り時間：" + seconds.ToString() + "秒";
-		} else {
-			SceneManager.LoadScene("Result");
 		}
 	}
 }
